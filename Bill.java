@@ -16,4 +16,10 @@ class Bill {
         this.amount = amount;
         this.usedCharging = usedCharging;
     }
+    public String getBillId() { return billId; }
+    public String getTicketId() { return ticketId; }
+    public LocalDateTime getExitTime() { return exitTime; }
+    public long getDuration() { return duration; }
+    public double getAmount() { return amount; }
+    public boolean isUsedCharging() { return usedCharging; }
 }

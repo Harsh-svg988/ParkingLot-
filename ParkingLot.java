@@ -4,6 +4,9 @@ public class ParkingLot {
     private List<EntryGate> entryGates = new ArrayList<>();
     private List<ExitGate> exitGates = new ArrayList<>();
 
+    // Getters
+    public Map<String, ParkingSpot> getSpots() { return spots; }
+
     public void addSpot(ParkingSpot spot) { spots.put(spot.getSpotId(), spot); }
     public void addEntryGate(EntryGate gate) { entryGates.add(gate); }
     public void addExitGate(ExitGate gate) { exitGates.add(gate); }
